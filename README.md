@@ -30,7 +30,7 @@ root<br>
 　　　└ App.scss　//各scssをインポート<br>
 <br>
 <br>
-#　MATERIAL-UI を利用しているコンポーネントとドキュメント
+#MATERIAL-UI を利用しているコンポーネントとドキュメント
 ■Navigation.js<br>
 https://material-ui.com/ja/components/bottom-navigation/<br>
 https://material-ui.com/ja/components/material-icons/<br>
