@@ -10,6 +10,7 @@ import ChatIcon from "@material-ui/icons/Chat";
 import FormatListBulletedIcon from "@material-ui/icons/FormatListBulleted";
 import ImportContactsIcon from "@material-ui/icons/ImportContacts";
 import ThumbUpAltIcon from "@material-ui/icons/ThumbUpAlt";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles({
   root: {
@@ -20,7 +21,6 @@ const useStyles = makeStyles({
 export default function SimpleBottomNavigation() {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
-  console.log("hello");
 
   return (
     <BottomNavigation
@@ -31,7 +31,12 @@ export default function SimpleBottomNavigation() {
       showLabels
       className={classes.root}
     >
-      <BottomNavigationAction label="Chat" icon={<ChatIcon />} />
+      <BottomNavigationAction
+        label="Chat"
+        icon={<ChatIcon />}
+        component={Link}
+        to="/Chat"
+      />
       <BottomNavigationAction label="Todo" icon={<FormatListBulletedIcon />} />
       <BottomNavigationAction label="Album" icon={<ImportContactsIcon />} />
       <BottomNavigationAction label="Recommend" icon={<ThumbUpAltIcon />} />

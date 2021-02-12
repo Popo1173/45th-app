@@ -1,7 +1,7 @@
 import "../scss/App.scss";
 
-import Header from "./Header";
-import Navigation from "./Navigation";
+import Header from "./common/Header";
+import Navigation from "./common/Navigation";
 
 function App() {
   return (
