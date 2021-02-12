@@ -1,15 +1,15 @@
-import React from 'react';
+import React from "react";
 
 //material-ui ボトムナビゲーションをインポート
-import { makeStyles } from '@material-ui/core/styles';
-import BottomNavigation from '@material-ui/core/BottomNavigation';
-import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
+import { makeStyles } from "@material-ui/core/styles";
+import BottomNavigation from "@material-ui/core/BottomNavigation";
+import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
 
 //material-ui iconをインポート
-import ChatIcon from '@material-ui/icons/Chat';
-import FormatListBulletedIcon from '@material-ui/icons/FormatListBulleted';
-import ImportContactsIcon from '@material-ui/icons/ImportContacts';
-import ThumbUpAltIcon from '@material-ui/icons/ThumbUpAlt';
+import ChatIcon from "@material-ui/icons/Chat";
+import FormatListBulletedIcon from "@material-ui/icons/FormatListBulleted";
+import ImportContactsIcon from "@material-ui/icons/ImportContacts";
+import ThumbUpAltIcon from "@material-ui/icons/ThumbUpAlt";
 
 const useStyles = makeStyles({
   root: {
@@ -20,6 +20,7 @@ const useStyles = makeStyles({
 export default function SimpleBottomNavigation() {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
+  console.log("hello");
 
   return (
     <BottomNavigation
@@ -37,5 +38,3 @@ export default function SimpleBottomNavigation() {
     </BottomNavigation>
   );
 }
-
-
