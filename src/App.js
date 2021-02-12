@@ -1,20 +1,18 @@
-import logo from './logo.svg';
-import './scss/App.scss';
+import React from "react";
+import Room from "./components/Room";
+import Chat from "./components/Chat";
 
-import Header from './components/Header';
-import Navigation from './components/Navigation';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-
-function App() {
+const App = () => {
   return (
-    //React.Fragment
-    <>
-    <div className="wapper">
-    <Header　/>
-    <Navigation　/>
-    </div>
-    </>
+    <Router>
+      <Switch>
+        <Route exact path="/" component={Room} />
+        <Route exact path="/Chat" component={Chat} />
+      </Switch>
+    </Router>
   );
-}
+};
 
 export default App;
